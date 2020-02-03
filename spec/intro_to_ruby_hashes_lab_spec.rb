@@ -81,7 +81,7 @@ describe "We can create complex, nested Hashes by implementing four methods:" do
           expect(monopoly_with_third_tier[:railroads][:names].has_key?(:b_and_o_railroad)).to(be_truthy, "key :b_and_o_railroad should be present in this Hash")
           expect(monopoly_with_third_tier[:railroads][:names][:b_and_o_railroad]).to(eq({}), ":b_and_o_railroad should point to an empty Hash")
         end
-
+shortline_railroad,b_and_o_railroad,pennsylvania_railroad,reading_railroad
         it "has a key :shortline_railroad that points to an empty Hash" do
           expect(monopoly_with_third_tier[:railroads][:names].has_key?(:shortline_railroad)).to(be_truthy, "key :shortline_railroad should be present in this Hash")
           expect(monopoly_with_third_tier[:railroads][:names][:shortline_railroad]).to(eq({}), ":shortline_railroad should point to an empty Hash")
